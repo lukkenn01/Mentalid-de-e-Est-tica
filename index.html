@@ -17,20 +17,23 @@
       background: #000;
       color: #fff;
       overflow-x: hidden;
+      position: relative;
     }
     #particles-js {
       position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
       top: 0;
       left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+    }
+    .hero, .section, .bonus {
+      position: relative;
+      z-index: 1;
     }
     .hero {
       padding: 100px 20px 60px;
       text-align: center;
-      position: relative;
-      z-index: 1;
     }
     .logo-title {
       margin-bottom: 30px;
@@ -72,8 +75,6 @@
       padding: 60px 20px;
       background: #111;
       text-align: center;
-      position: relative;
-      z-index: 1;
     }
     .section h2 {
       color: #007BFF;
@@ -95,11 +96,9 @@
       font-size: 1em;
     }
     .bonus {
-      background: #000;
+      background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=80') center/cover;
       padding: 60px 20px;
       text-align: center;
-      position: relative;
-      z-index: 1;
     }
     .bonus h2 {
       color: #FFFFFF;
@@ -120,7 +119,7 @@
 
   <section class="hero">
     <div class="logo-title">
-      <img src="c:\Users\Souza7xis\Pictures\Screenshots\logo_mentalidade_estetica.png" alt="Logo Mentalidade e Estética">
+      <img src="logo_mentalidade_estetica.png" alt="Logo Mentalidade e Estética">
     </div>
     <h1>Mentalidade e Estética</h1>
     <p>Transcenda sua capacidade de mentalidade, aprenda a potencializar seus treinos, ter foco, disciplina — estes ebooks irão te dar o caminho para uma vida de sucesso. <strong>Desperte a versão mais forte e focada de você mesmo — o seu maior concorrente é você de ontem!</strong></p>
@@ -145,21 +144,21 @@
   <script>
     particlesJS("particles-js", {
       "particles": {
-        "number": { "value": 80 },
+        "number": { "value": 60 },
         "color": { "value": "#007BFF" },
         "shape": { "type": "circle" },
-        "opacity": { "value": 0.4 },
-        "size": { "value": 3 },
+        "opacity": { "value": 0.3 },
+        "size": { "value": 2 },
         "line_linked": {
           "enable": true,
-          "distance": 150,
+          "distance": 130,
           "color": "#007BFF",
-          "opacity": 0.4,
+          "opacity": 0.3,
           "width": 1
         },
         "move": {
           "enable": true,
-          "speed": 2,
+          "speed": 1.2,
           "direction": "none",
           "out_mode": "out"
         }
@@ -170,7 +169,7 @@
           "onclick": { "enable": true, "mode": "push" }
         },
         "modes": {
-          "repulse": { "distance": 100 },
+          "repulse": { "distance": 80 },
           "push": { "particles_nb": 4 }
         }
       },
