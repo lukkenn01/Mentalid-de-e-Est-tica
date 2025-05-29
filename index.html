@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
     html, body {
       font-family: 'Montserrat', sans-serif;
@@ -112,6 +113,24 @@
       margin: 0 auto;
       line-height: 1.6;
     }
+    /* Botão fixo WhatsApp */
+    .zap-fixo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px #25D366;
+      z-index: 1000;
+      font-size: 14px;
+    }
+    .zap-fixo:hover {
+      background: #1ebc59;
+    }
   </style>
 </head>
 <body>
@@ -140,6 +159,8 @@
     <h2>Bônus Adicionais Disponíveis</h2>
     <p>Ao adquirir o Ebook principal, você terá acesso a uma seleção de ebooks complementares com conteúdo exclusivo por um valor simbólico. Aproveite para turbinar seu conhecimento e resultados!</p>
   </section>
+
+  <a href="https://wa.me/5514996966771" class="zap-fixo">💬 Fale agora</a>
 
   <script>
     particlesJS("particles-js", {
